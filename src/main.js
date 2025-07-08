@@ -1,10 +1,11 @@
 import { gsap } from "gsap";
 
-console.log("GSAP is loaded!");
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("GSAP loaded and DOM ready");
 
-// Basic test animation
-gsap.to(".headline", {
-  y: 50,
-  opacity: 0,
-  duration: 1,
+  gsap.to(".heading-style-h1", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+  });
 });

@@ -4,10 +4,9 @@
   "description": "Personal Website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "esbuild src/main.js --bundle --sourcemap --outfile=dist/main.js --watch",
-    "build": "esbuild src/main.js --bundle --minify --outfile=dist/main.js"
-  },
+  "dev": "esbuild src/main.js --bundle --sourcemap --outfile=dist/main.js --watch --servedir=dist --port=8000",
+  "build": "esbuild src/main.js --bundle --minify --outfile=dist/main.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jackreed-io/jackreed.io.git"
