@@ -1,0 +1,29 @@
+{
+  "name": "jackreed.io",
+  "version": "1.0.0",
+  "description": "Personal Website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "esbuild src/main.js --bundle --sourcemap --outfile=dist/main.js --watch",
+    "build": "esbuild src/main.js --bundle --minify --outfile=dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackreed-io/jackreed.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jackreed-io/jackreed.io/issues"
+  },
+  "homepage": "https://github.com/jackreed-io/jackreed.io#readme",
+  "dependencies": {
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.6"
+  }
+}
